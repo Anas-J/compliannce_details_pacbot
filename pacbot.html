@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header" id="header">
+                <div class="rectangle1">
+                    <div class="sec1">
+                        <i class="fas fa-cloud" style="color: white; font-size: 13px; opacity: 0.5;"></i>
+                        <div class="stevedrop" id="stevedrop" onclick="steveclick()">
+                            <div class="dropdown_div" id="dropdown_div" onclick="steveclick()">
+                                <div class="steve" onclick="steveclick()">Steve Hull's Assets</div>
+                                <div class="downarrow"><img src="icons/blank-space.png" alt="DownArrow" class="downarrowimg" style="width: 13px;" onclick="steveclick()"></div>
+                            </div>
+                            <div class="dropdown_content" id="dropdown_content">
+                                <ul class="dropdown" id="dropdown">
+                                    <li class="dropdown-item">
+                                        <div class="dropdown-link">Item 1</div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="dropdown-link">Item 2</div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="dropdown-link">Item 3</div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="dropdown-link">Item 4</div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="dropdown-link">Item 5</div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="dropdown-link">Item 6</div>
+                                    </li>
+                                    <li class="dropdown-item" onclick="modal()">
+                                        <div class="dropdown-link show_more" id="show_more" onclick="modal()">Show More...</div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <div><img src="icons/forward.png" class="forward"></div>
+                        <div><img src="icons/globe.png" class="globe"></div>
+                        <div class="infra"> Infra & Platform</div>
+                    </div>
+                    <div style="justify-content: center; align-items: center; display: flex;"><img src="icons/pac.png" class="pacimg" id="pacimg" onclick="sidebar()"></div>
+                    <div class="sec2" id="sec2">
+                        <div class="search" id="search" onclick="search()">
+                            <img src="icons/search.png" class="searchicon" id="searchicon" onclick="search()">
+                            <div class="searchbardiv">
+                                <input type="text" placeholder="Type to search.." class="searchbar" id="searchbar">
+                            </div>
+                        </div> 
+                        <div id="userdetail">
+                            <div class="user_drop" id="user_drop" onclick="userclick()">
+                                <div class="hi" id="hi" onclick="userclick()">Hi, Anas</div>
+                                <div><img src="icons/shape3_tn.jpg" class="shape" id="shape" onclick="userclick()"></div>
+                            </div>
+                            <div class="user_dropdown_content" id="user_dropdown_content">
+                                <ul class="user_drop_item" id="user_drop_item">
+                                    <li id="home"><a class="icon" href="#">
+                                        <div class="icon">
+                                        <span class="fas fa-home"></span>
+                                        </div>
+                                        Home </a>
+                                    </li>
+                                    <li class="setting-item" id="setting"><a class="icon" href="#">
+                                        <div class="icon">
+                                        <span class="fas fa-cog"></span>
+                                        </div>
+                                        Settings & privacy</a>
+                                    </li>
+                                    <li class="help-item" id="help"><a class="icon" href="#">
+                                        <div class="icon">
+                                        <span class="fas fa-question-circle"></span>
+                                        </div>
+                                        Help & support </a>
+                                    </li>
+                                    <li id="logout"><a class="icon" href="#">
+                                            <div class="icon">
+                                                <span class="fas fa-sign-out-alt"></span>
+                                            </div>
+                                            Log out </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </header>
+            <div class="main">
+                <div id="sidebar" class="sidebar">
+                    <div id="side" class="side"> Sidebar</div>
+                    <img src="icons\close.png" id="sidebarclose" class="sidebarclose">
+
+                </div>
+                <div class="rectangle2">
+                    <div><img src="icons/shape2.png" class="shape2"></div>
+                    <div><img src="icons/rating.png" class="shape2" style="width: 18px; margin-left: 7px; opacity: 0.5;"></div>
+                    <div><img src="icons/shape2.png" class="shape2"></div>
+                    <div><img src="icons/sheet.png" class="shape2" style="width: 16px; opacity: 0.5;"></div>
+                    <div><img src="icons/shape2.png" class="shape2"></div>
+                    <div><img src="icons/shape2.png" class="shape2"></div>
+                </div>
+                <div class="main1" id="main1">
+                    <div class="heading" style="display: flex; flex-direction: row; padding: 1.2em;">
+                        <div class="compliance"><h3>Compliance</h3><img src="icons/info.png" class="info"></div>
+                    </div>
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                          <div><span class="modal-close" id="modal-close">&times;</span></div>
+                          <div>
+                            <p>Happy New Year 2021!!!</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="mainbody" id="mainbody">
+                        <div class="col1">
+                            <div class="tile1 tile" style="overflow-y: auto;" >
+                                <h4 class="f18">Compliance score</h4>
+                                <div class="scroll1">
+                                    <div class="f13">A cumulative score calculated based on the scan status of
+                                    all assets accoss 160 rules.</div>
+                                    <img src="icons/graph1.png" class="graph1">
+                                </div>
+                                
+                            </div>
+                            <div class="tile2 tile">
+                                <h3 class="f18">Other Industry Benchmarks</h3>
+                                <div class="scroll1" style="overflow-y: auto; display: flex; flex-direction: column;
+                                height: 100%;
+                                align-items: center;
+                                justify-content: center;">
+                                    <div class="f34 num" style="text-align: center;">74%</div>
+                                    <div class="f16" style="padding: 0.5em;">Center of Internet Security (CIS) Compliance</div>
+                                </div>
+                            </div>
+                            <div class="tile3 tile">
+                                <div class="f18">Exemptions</div>
+                                <div class="inwrap scroll1" style="overflow-y: auto;
+                                justify-content: center;
+                                align-items: center;
+                                transform: translate(0, -14%);">
+                                    <div style="width: 50%;">
+                                        <div class="f34 num" style="color: #fb3051; text-align: left;">14</div>
+                                        <div class="f16" style="text-align: left;">Exemptions</div>
+                                        <div style="font-size: 1vmax; text-align: left;">that pose a risk</div>
+                                    </div>
+                                    <div style="width: 50%;">
+                                        <div class="f34 num" style="text-align: left;">22</div>
+                                        <div class="f16" style="text-align: left;">Pending</div>
+                                        <div class="f16" style="text-align: left;">Exemptions</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="tile4 tile">
+                                <h4 class="f18">Policy Violations</h4>
+                                <div class="inwrap4" style="overflow-y: auto; padding-top: 1.3em;">
+                                    <div class="t4num">
+                                        <div class="t4left">
+                                            <div class="f34 num">46,734</div>
+                                        </div>
+                                        <div class="t4right" style="display: flex; flex-direction: row;">
+                                            <div class="f34 num" style="color: #fb3051;">2,464</div>
+                                            <div style="padding: 10px;background-color: #eeeeee; margin-left: 10px;">
+                                                <div class="f13" style="color: crimson;">35 violations</div>
+                                                <div class="f13">over 14 days old</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t4text">
+                                        <div class="t4left">
+                                            <div class="f16" style="text-align: left; padding-top: 0.1em;">Total Violations</div>
+                                            <div style="display: flex; flex-direction: row; padding-top: 0.2em;">
+                                                <div class="f13">Past 24 hours: </div>
+                                                <div class="f13 " style="color: crimson; padding-left: 5px;">+1,340</div>
+                                                <div class="f13" style="color: #26ba9d; padding-left: 5px;">-2,093</div>
+                                            </div>
+                                        </div>
+                                        <div class="t4right">
+                                            <div class="f16" style="text-align: left;padding-top: 0.1em;">Critical Violations</div>
+                                            <div style="display: flex; flex-direction: row; padding-top: 0.1em;">
+                                                <div class="f13" style="text-align: left;">Past 24 hours: </div>
+                                                <div class="f13" style="color: crimson; padding-left: 5px;">+244</div>
+                                                <div class="f13" style="color: #26ba9d; padding-left: 5px;">-306</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile5 tile" style="overflow-y: auto;">
+                                <div class="f18">Policy Violation Distribution</div>
+                                <div style="display: flex;">
+                                    <img src="icons/bubble.png" class="bubble">
+                                </div>
+                                <div class="checkbox">
+                                    <div>
+                                        <input type="checkbox" id="critical" name="critical">
+                                        <label class="leb" for="critical">Critical</label>
+                                        <span class="mark"></span>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="high" name="high">
+                                        <label class="leb" for="high">High</label>
+                                        <span class="mark"></span>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="medium" name="medium">
+                                        <label class="leb" for="medium">Medium</label>
+                                        <span class="mark"></span>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="low" name="low">
+                                        <label for="low">Low</label>
+                                        <span class="mark"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile6 tile">
+                                <div class="f18">Cost</div>
+                                <div class="inwrap scroll1" style="align-items: center; transform: translate(0, -16%);">
+                                    <div style="width: 45%; padding-top: 1em;">
+                                        <div class="f34 num">$46,701</div>
+                                        <div class="f16" style="text-align: left; padding-top: 0.2em;padding-bottom: 0.2em;">Monthly Cost</div>
+                                    </div>
+                                    <div style="width: 55%; padding-top: 1em;">
+                                        <div class="f34 num" style="text-align: left;">$7,892</div>
+                                        <div class="f16" style="text-align: left;">Potential Monthly Savings</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="tile7 tile">
+                                <div class="row1" style="display: flex; flex-direction: row;">
+                                    <div class="tile71 tile">
+                                        <div class="f18" style="text-align: center;">Vulnerabilities</div>
+                                        <div class="wrap scroll1">
+                                            <div class="f34 num" style="padding-top: 0.3em;">29,402</div>
+                                            <div class="f16" style="padding-top: 0.1em;">Vulnerabilities</div>
+                                            <div class="f13">acrross 2,623 hosts</div>
+                                            
+                                        </div>
+                                        <div class="progress71"></div>
+                                    </div>
+                                    <div class="tile72 tile">
+                                        <div class="f18" style="text-align: center;">Tagging</div>
+                                        <div class="wrap scroll1">                                        
+                                            <div class="f34 num" style="padding-top: 0.3em;">1,508</div>
+                                            <div class="f16" style="padding-top: 0.1em;">Untagged Assets</div>
+                                            <div class="f13">out of 7,902 assets</div>
+                                            
+                                        </div>
+                                        <div class="progress72"></div>
+                                    </div>
+                                </div>
+                                <div class="row2" style="display: flex; flex-direction: row;">
+                                    <div class="tile73 tile">
+                                        <div class="f18" style="text-align: center;">Certificates</div>
+                                        <div class="wrap scroll1">
+                                            <div class="f34 num" style="padding-top: 0.3em;">11</div>
+                                            <div class="f16" style="padding-top: 0.1em;">Expiring Certificates</div>
+                                            <div class="f13">out of 387 certificates</div>
+                                            
+                                        </div>
+                                        <div class="progress73"></div>
+                                    </div>
+                                    <div class="tile74 tile">
+                                        <div class="f18" style="text-align: center;">Patching</div>
+                                        <div class="wrap scroll1">
+                                            <div class="f34 num" style="padding-top: 0.3em;">153</div>
+                                            <div class="f16" style="padding-top: 0.1em;">Unpatched Instances</div>
+                                            <div class="f13">out of 2,732 instances</div>
+                                            
+                                        </div>
+                                        <div class="progress74"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tile8 tile" style="height: 50%;">
+                                <h3 class="f18 least">Least Compliant Across Org</h3>
+                                <div style="display: flex; flex-direction: column; height: 100%;">
+                                    <div class="tabname">
+                                        <div class="tab">View By:</div>
+                                        <div class="tab-svp" id="tab-svp" onclick="svp()">SVP</div>
+                                        <div class="tab-vp" id="tab-vp" onclick="vp()">VP</div>
+                                        <div class="tab-srdir" id="tab-srdir" onclick="srdir()">Sr. Director</div>
+                                        <div class="tab-dir" id="tab-dir" onclick="director()">Director</div>
+                                        <div class="tab-app" id="tab-app" onclick="app()">Application</div>
+                                    </div>
+                                    <div class="sec8" id="sec8">
+                                        <div class="sec81">
+                                            <div style="width: 35%; font-size: 1em;">1. Jazz</div>
+                                            <div class="progress1"></div>
+                                        </div>
+                                        <div class="sec81">
+                                            <div style="width: 35%; font-size: 1em;">2. PacBot</div>
+                                            <div class="progress2"></div>
+                                        </div>
+                                        <div class="sec81">
+                                            <div style="width: 35%; font-size: 1em;">3. Conducktor</div>
+                                            <div class="progress3"></div>
+                                        </div>
+                                        <div class="sec81">
+                                            <div style="width: 35%; font-size: 1em;">4. CCOE_un...</div>
+                                            <div class="progress4"></div>
+                                        </div>
+                                        <div class="sec81">
+                                            <div style="width: 35%; font-size: 1em;">5. Digital Co...</div>
+                                            <div class="progress5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="sec8nonapp" id="sec8nonapp">
+                                        <img src="icons/construction.png" class="construction">
+                                        <div>Under Construction!!</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
